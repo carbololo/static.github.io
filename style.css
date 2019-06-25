@@ -115,11 +115,15 @@ color: black;
 	margin: 60px;
 	padding: 5px;
 	box-shadow: 0 0 15px rgba(6,6,6,6.2);
-	border-radius: 5px ;
 	background: white;
 	font-size: 20px;
 	font-family: 'Quicksand';
 }
+
+.guillemet{
+	font-size: 40px;
+}
+
 
 .atelier{
 	color:  lightblue;
@@ -127,9 +131,13 @@ color: black;
 	padding: 20px;
 	justify-content: center;
 	align-items: baseline;
+	text-align: justify;
+
 	background: white;
 	box-shadow: 0 0 15px rgba(6,6,6,6.2);
-	border-radius: 5px ;
+	border-radius: 50%;
+	border: solid grey;
+	object-fit: cover;
 	 font-size: 24px;
 	  height: 300px; 
 	  width: 350px;
@@ -143,13 +151,21 @@ color: black;
 	align-items: baseline;
 	justify-content: center;
 	background: white;
+	text-align: justify;
 	
 	box-shadow: 0 0 15px rgba(6,6,6,6.2);
-	border-radius: 5px ;
+	border-radius: 50%;
+	border: solid grey;
+	object-fit: cover;
 	 font-size: 24px;
 	  height:300px; 
 	  width: 350px;
 	  font-family: 'Quicksand';
+}
+
+.myicon{
+	font-size: 100px;
+
 }
 
 .équipe{
@@ -158,9 +174,13 @@ color: black;
 	padding: 20px;
 	justify-content: center;
 	align-items: baseline;
+	text-align: justify;
+
 	background: white;
-	box-shadow: 0 0 15px rgba(6,6,6,6.2);
-	border-radius: 5px ;
+	box-shadow: 0 0 15px rgba(2,2,2,6.2);
+	border-radius: 50% ;
+	border: solid grey;
+	object-fit: cover;
 	 font-size: 24px;
 	  height: 300px; 
 	  width: 350px; 
@@ -322,26 +342,6 @@ img {
     border-left: 3px solid #E8E8E8;
 }
 
-/* Them responsive awesomeness */
-@media (min-height: 900px) {
-    body {
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media (max-width: 500px) {
-    .recipe-flex {
-        flex-wrap: wrap;
-    }
-    .plan {
-        border-left: 0;
-    }
-    .stages {
-        margin-left: 24px;
-    }
-} 
-
 /* the outer list */
 .steps {
   margin: 2em 0 0 -3px;
@@ -408,6 +408,182 @@ img {
 }
 
 .steps ul li::before {
+  content: "";
+  width: 10px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: -27px;
+  border-radius: 10px;
+}
+
+/* Let's color our steps */
+.steps > li:nth-child(1),
+.steps > li:nth-child(1)::after { border-color: #DCEDC8; }
+.steps > li:nth-child(1) li::before { background-color: #DCEDC8; }
+.steps > li:nth-child(2),
+.steps > li:nth-child(2)::after { border-color: #C5E1A5; }
+.steps > li:nth-child(2) li::before { background-color: #C5E1A5; }
+.steps > li:nth-child(3),
+.steps > li:nth-child(3)::after { border-color: #AED581; }
+.steps > li:nth-child(3) li::before { background-color: #AED581; }
+.steps > li:nth-child(4),
+.steps > li:nth-child(4)::after { border-color: #9CCC65; }
+.steps > li:nth-child(4) li::before { background-color: #9CCC65; }
+.steps > li:nth-child(5),
+.steps > li:nth-child(5)::after { border-color: #8BC34A; }
+.steps > li:nth-child(5) li::before { background-color: #8BC34A; }
+.steps > li:nth-child(6),
+.steps > li:nth-child(6)::after { border-color: #7CB342; }
+.steps > li:nth-child(6) li::before { background-color: #7CB342; }
+
+
+  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+.aboutus
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color:#fff;
+}
+
+.about-content {
+  max-width:800px;
+  margin: 0 auto;
+}
+.about-content h2 {
+  font-size: 30px;
+  line-height:45px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.about-content p {
+  font-weight: 300;
+  color: #777;
+  font-size: 18px;
+}
+
+.about-content {
+  padding-right:60px;
+}
+
+.btn-black {
+  color:#fff;
+  background-color:rgba(0,0,0,1);
+  transition: 0.5s;
+  border-radius:1;
+}
+
+.btn-black: .hover {
+  color:#fff;
+  background-color:rgba(0,0,0,0.8);
+  transition: 0.5s;
+}
+
+@media (max-width:576px) {
+  .about-content {
+    padding-right:0;
+  }
+  .about-content h2 {
+    font-size:26px;
+  }
+  .about-content p {
+    font-size:16px;
+  }
+}
+/* Them responsive awesomeness */
+@media (min-height: 900px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .recipe-flex {
+        flex-wrap: wrap;
+    }
+    .plan {
+        border-left: 0;
+    }
+    .stages {
+        margin-left: 24px;
+    }
+} 
+
+/* the outer list */
+.steps {
+  margin: 2em 0 0 -3px;
+  padding: 0 1em 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  counter-reset: steps; /* alternative to built-in list style that we can style */
+}
+
+/* the steps (li) */
+.steps > li {
+  padding: 28px 0 0 12px;
+  flex: 1 1 100%;
+  position: relative;
+  border-left: 3px solid;
+  counter-increment: steps;
+}
+
+/* this isn't needed, but I prefer some spacing at the bottom */
+.steps > li:.last-child {
+  padding-bottom: 2em;
+}
+
+/* the smallish description label next to the bubble */
+.steps > li::.before {
+  content: "Étape " counter(steps) ": " attr(data-description);
+  position: absolute;
+  top: 3px;
+  left: 24px;
+  font-style:  italic;
+  color: red;
+  font-size: 20px;
+}
+
+/* the bubble with the number in it */
+.steps > li::.after {
+  position: absolute;
+  top: 0;
+  left: -16px;
+  background: #fff;
+  border-radius: 20px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  line-height: 26px;
+  content: counter(steps);
+  border: 3px solid;
+}
+
+/* the inner list within a step */
+.steps ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: 12px;
+  padding-top: 3px;
+}
+
+.steps ul li {
+  position: relative;
+}
+
+.steps ul li::.before {
   content: "";
   width: 10px;
   height: 4px;
