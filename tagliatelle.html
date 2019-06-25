@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tagliatelle con pesto</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="tagliatelle.css">
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recette italienne</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arial' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div id='box'>
+      <div id='principal_image'>
+        <a href="#" title="25 minuti"><i class="fa fa-clock-o fa-2x"></i></a>
+        <img src="images/tagliatelle.jpg">
+        <a id='down' href="https://goo.gl/1M3xw4" target="_blank" rel="noopener noreferrer"
+        title="Download free do whatever you want high-resolution photos from Mariana Medvedeva">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>unsplash-logo</title>
+          <path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8
+          2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3
+          1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3
+          1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1
+          7.5-3.4 7.5-7.5z"></path></svg></span><span></span>
+        </a>
+      </div>
+
+      <div id="recipe-content">
+        <!-- Menu -->
+        <ul class="tabs">
+          <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'recipe_title')" id="defaultOpen">Home</a></li>
+          <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'ingredients')">Ingredienti</a></li>
+          <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'preparation')">Preparazione</a></li>
+          <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'calories')">Calorie</a></li>
+        </ul>
+        <h2>Recette italienne</h2>
+
+        <div id='recipe_title' class='tabcontent'>
+          <h1>Tagliatelle<br>
+          &amp; con pesto</h1>
+          <ul class="info-list">
+            <li class="item">
+              <div class="value">25</div>
+              <div class="text">Minuti</div>
+            </li>
+            <li class="item">
+              <div class="value">167</div>
+              <div class="text">Calorie</div>
+            </li>
+            <li class="item">
+              <div class="value">4</div>
+              <div class="text">Porzioni</div>
+            </li>
+          </ul>
+          <div id='stars-rating'>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-half-o"></span>
+            <span class='number-rating'>7.825</span>
+          </div>
+          <p>Le gratin de pâtes est un grand classique de la cuisine familiale, qui plaît à tout âge. Grâce à cette recette, vous régalerez les papilles de vos proches avec ce plat régressif, en n’utilisant que quelques ingrédients de base. Buon appetito !</p>
+        </div>
+
+        <div id='ingredients' class='tabcontent'>
+          <h1>Ingredienti</h1>
+          <ul class='ingredients_list' data-toggle="buttons">
+            <li><input type='checkbox' id='one'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='one'><strong>200g</strong> Tagliatelle</label></li>
+            <li><input type='checkbox' id='two'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='two'><strong>30g</strong> Pignons de pin</label></li>
+            <li><input type='checkbox' id='three'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='three'><strong>1</strong> Bouquet de basilic</label></li>
+            <li><input type='checkbox' id='four'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='four'><strong>2 cas</strong> Parmesan rapé</label></li>
+            <li><input type='checkbox' id='five'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='five'><strong>3/4 cas</strong> Huile d’olive</label></li>
+            <li><input type='checkbox' id='six'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='six'><strong>3/4 cas</strong> Noisette de beurre</label></li>
+            <li><input type='checkbox' id='seven'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='seven'><strong></strong> Sel, Poivre</label></li>
+         
+            
+          </ul>
+        </div>
+
+        <div id='preparation' class='tabcontent'>
+          <h1>Preparazione</h1>
+          <br>
+          <div id='scroll'>
+            <h3>Étape 1</h3>
+            <p class='prep'>Faites bouillir une grande quantité d'eau avec un filet d'huile.Pendant ce temps, préparez la sauce au pistou : pelez la gousse d'ail, dégermez-la et hachez-la finement. Lavez le bouquet de basilic.</p>
+            <h3>Étape 2</h3>
+            <p class='prep'>Mixez les feuilles de basilic égouttées, l'ail haché, les pignons, le parmesan, le sel et le poivre. Ajoutez l'huile d'olive et mixez à nouveau.</p>
+            <h3>Étape 3</h3>
+            <p class='prep'>La crème obtenue doit être homogène.Lorsque l'eau bout, salez-la et plongez-y les pâtes. Faites-les cuire al dente suivant les indications portées sur l'emballage.</p>
+            <h3>Étape 4</h3>
+            <p class='prep'>Une minute avant la fin de leur cuisson, prélevez 3 à 4 cuillères à soupe de l'eau de cuisson pour délayer le pistou.Égouttez les pâtes et mélangez-les délicatement au pistou.</p>
+            <h3>Étape 5</h3>
+            <p class='prep'>Dégustez dès que les pâtes sont prêtes et servez chaud !</p>
+          </div>
+        </div>
+
+        <div id='calories' class='tabcontent'>
+          <h1>Calories</h1>
+          <div class="gda-widget recipe-tool-gda">
+            <ul class="gda-values-list">
+              <li class="energy">
+                <span class="heading">Energy</span>
+                <span class="kj">710kj</span>
+                <span class="kcal">167kcal</span>
+                <span class="percentage">8%</span>
+              </li>
+              <li class="fat low 1.4">
+                <span class="heading">Fat</span>
+                <span class="value">4g</span>
+                <span class="percentage">6%</span>
+              </li>
+              <li class="saturates low 0.2">
+                <span class="heading">Saturates</span>
+                <span class="value">1g</span>
+                <span class="percentage">4%</span>
+              </li>
+              <li class="sugars low 1.8">
+                <span class="heading">Sugars</span>
+                <span class="value">8g</span>
+                <span class="percentage">9%</span>
+              </li>
+              <li class="salt low 0.0">
+                <span class="heading">Salt</span>
+                <span class="value">0.1g</span>
+                <span class="percentage">2%</span>
+              </li>
+            </ul>
+            <p class="gda-reference">of the <a href="/our-food/what-is-healthy.html">reference intake</a><br>
+            Carbohydrate <span>28.3g</span>  Protein <span>6.2g</span>  Fibre <span>2.2g</span></p>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+    <script type="text/javascript">function openTab(evt, cityName) {
+	let i, tabcontent, tablinks;
+
+	// Get all elements with class="tabcontent" and hide them
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (let i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+
+	document.getElementById(cityName).style.display = "block";
+	evt.currentTarget.className += " active";
+}
+
+window.onload = function (e) {
+	document.getElementById("defaultOpen").click();
+}
+</script>
+  </body>
+</html>
